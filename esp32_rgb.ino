@@ -139,7 +139,7 @@ void loop(){
             client.println();           // http response ends with blank line
 
             break;
-          } else currentLine == "";
+          } else currentLine = "";
 
         } else if (c != '\r') {  // if you got anything else but a carriage return character,
           currentLine += c;      // add it to the end of the currentLine
